@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="TodoListController as app">
+      {{app.test}}
+
+    <form>
+      phone : <input type="text" ng-model="input.phone"> <br>
+      name: <input type="text" ng-model="input.name">
+      <button type="submit" ng-click="app.add(input)">send</button>
+    </form>
+
+  </body>
+</html>
